@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Utility</title>
+    <link rel="stylesheet" href="/qr/style.css">
+    
+    <style>
+        
+    </style>
+    <script>
+        function navigateTo(page) {
+            document.body.style.background = '#e3f2fd';
+            setTimeout(() => {
+                window.location.href = page;
+            }, 300);
+        }
+    </script>
+</head>
+<link rel="stylesheet" href="script.js">
+<body>
+    <h1>QR Code Utility</h1>
+    <button class="btn" onclick="navigateTo('/qr/create_qr.html')">Create QR Code</button>
+    <button class="btn" onclick="navigateTo('/qr/scan_qr.html')">Scan QR Code</button>
+</body>
+</html>
